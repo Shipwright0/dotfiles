@@ -1,0 +1,44 @@
+#This config has been shamelessly stolen from Luke Smith @ https://github.com/LukeSmithxyz
+#Check out his cool scripts
+#Bring in my colors
+auto-reload yes
+download-path "~/audio/podcasts/%n/"
+reload-time 20
+external-url-viewer "urlscan -dc -r '~/scripts/gitscripts/linkhandler.sh {}'"
+
+bind-key j down
+bind-key k up
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+bind-key l open
+bind-key h quit
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key N prev-unread
+bind-key D pb-download
+bind-key U show-urls
+bind-key x pb-delete
+bind-key ^t next-unread
+
+color listnormal cyan default 
+color listfocus yellow black standout 
+color listnormal_unread green black
+color listfocus_unread red black 
+color info red black bold
+color article cyan default
+
+#Custom
+
+browser "~/scripts/gitscripts/linkhandler.sh"
+macro , open-in-browser
+macro m set browser "mpv"; open-in-browser ; set browser "~/scripts/gitscripts/linkhandler.sh"
+macro s set browser "surf"; open-in-browser ; set browser "~/scripts/gitscripts/linkhandler.sh"
+macro w set browser "w3m"; open-in-browser ; set browser linkhandler
+macro p set browser "dmenuhandler"; open-in-browser ; set browser linkhandler
+macro c set browser "xsel -b <<<" ; open-in-browser ; set browser linkandler

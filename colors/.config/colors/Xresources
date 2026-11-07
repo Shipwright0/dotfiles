@@ -1,0 +1,86 @@
+URxvt.font:xft:Iosevka Nerd Font:size=12, xft:DejaVuSansM Nerd Font Mono:pixelsize=12
+URxvt.scrollBar: false
+URxvt.depth: 30
+
+!Perl Extensions
+URxvt.perl-ext-common: default,clipboard
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+Sxiv.font:Iosevka Nerd Font:size=12
+Sxiv.background:#000000
+Sxiv.foreground:#00C0FF
+
+! special
+*foreground:   #fce8c3
+*background:   #121110
+*cursorColor:  #fed06e
+
+!normal
+*color0:       #121110
+*color1:       #4a0705
+*color2:       #20451f
+*color3:       #d79d21
+*color4:       #0e3254
+*color5:       #bf245c
+*color6:       #079499
+*color7:       #c5b088
+!*color0:       #121110
+!*color1:       #ef2f27
+!*color2:       #519f50
+!*color3:       #fbb829
+!*color4:       #2c78bf
+!*color5:       #e02c6d
+!*color6:       #0aaeb3
+!*color7:       #c5b088
+
+!bright
+*color8:      #424141
+*color9:      #ef2f27
+*color10:     #519f50
+*color11:     #fbb829
+*color12:     #2c78bf
+*color13:     #e02c6d
+*color14:     #0aaeb3
+*color15:     #ebe4d7
+!*color8:       #917e6b
+!*color9:       #f75341
+!*color10:      #98bc37
+!*color11:      #fed06e
+!*color12:      #68a8e4
+!*color13:      #ff5c8f
+!*color14:      #2be4d0
+!*color15:      #fce8c3
+
+! black
+!*color0:       #121110
+!*color8:       #917e6b
+
+! red
+!*color1:       #ef2f27
+!*color9:       #f75341
+
+! green
+!*color2:       #519f50
+!*color10:      #98bc37
+
+! yellow
+!*color3:       #fbb829
+!*color11:      #fed06e
+
+! blue
+!*color4:       #2c78bf
+!*color12:      #68a8e4
+
+! magenta
+!*color5:       #e02c6d
+!*color13:      #ff5c8f
+
+! cyan
+!*color6:       #0aaeb3
+!*color14:      #2be4d0
+
+! white
+!*color7:       #c5b088
+!*color15:      #fce8c3
