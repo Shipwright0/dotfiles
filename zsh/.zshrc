@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source <(fzf --zsh)
+alias debup="sudo apt update && sudo apt upgrade"
 alias xbpsup="sudo xbps-install -Suv"
 alias calcurse="calcurse -D ~/documents/calendar"
 alias docker=podman
