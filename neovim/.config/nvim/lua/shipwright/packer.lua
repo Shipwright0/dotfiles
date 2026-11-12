@@ -29,7 +29,8 @@ return require('packer').startup(function(use)
 	  'srcery-colors/srcery-vim', as = 'srcery'
   }) 
   
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use {'nvim-treesitter/nvim-treesitter', branch='main', run = ':TSUpdate'
+  }
 
   use {
 	  "ThePrimeagen/harpoon",

@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/anon/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?.lua;/home/anon/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?/init.lua;/home/anon/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?.lua;/home/anon/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/anon/.cache/nvim/packer_hererocks/2.1.1748459687/lib/lua/5.1/?.so"
+local package_path_str = "/home/anon/.cache/nvim/packer_hererocks/2.1.1785192264/share/lua/5.1/?.lua;/home/anon/.cache/nvim/packer_hererocks/2.1.1785192264/share/lua/5.1/?/init.lua;/home/anon/.cache/nvim/packer_hererocks/2.1.1785192264/lib/luarocks/rocks-5.1/?.lua;/home/anon/.cache/nvim/packer_hererocks/2.1.1785192264/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/anon/.cache/nvim/packer_hererocks/2.1.1785192264/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/anon/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/anon/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/anon/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -129,15 +134,16 @@ _G.packer_plugins = {
     path = "/home/anon/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["opencode.nvim"] = {
+    config = { "\27LJ\2\n/\0\0\2\0\3\0\0056\0\0\0009\0\1\0004\1\0\0=\1\2\0K\0\1\0\18opencode_opts\6g\bvim\0" },
+    loaded = true,
+    path = "/home/anon/.local/share/nvim/site/pack/packer/start/opencode.nvim",
+    url = "https://github.com/nickjvandyke/opencode.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/anon/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  playground = {
-    loaded = true,
-    path = "/home/anon/.local/share/nvim/site/pack/packer/start/playground",
-    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -167,6 +173,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: opencode.nvim
+time([[Config for opencode.nvim]], true)
+try_loadstring("\27LJ\2\n/\0\0\2\0\3\0\0056\0\0\0009\0\1\0004\1\0\0=\1\2\0K\0\1\0\18opencode_opts\6g\bvim\0", "config", "opencode.nvim")
+time([[Config for opencode.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
